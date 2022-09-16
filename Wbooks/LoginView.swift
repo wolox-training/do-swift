@@ -53,27 +53,41 @@ private extension LoginView {
     }
     var usernameTxtVw: some View{
         TextField("Username", text: $user.username)
+            .font(Font.custom("inter", size: 15))
+            .fontWeight(.medium)
+            .lineSpacing(18)
             .padding( 17.0)
             .frame(width: 303.0, height: 52.0)
             .background(Color.white)
             .textContentType(.username)
+            .border(Color.black, width: 0.1)
             .padding(.bottom, 20.0)
+            
     }
     var passwordTxtVw: some View{
         SecureField("Password", text: $user.password)
+            .font(Font.custom("inter", size: 15))
+            .fontWeight(.medium)
+            .lineSpacing(18)
             .padding( 17.0)
             .frame(width: 303.0, height: 52.0)
             .background(Color.white)
             .textContentType(.password)
+            .border(Color.black, width: 0.1)
             .padding(.bottom, 20.0)
     }
     var signInBtVW: some View{
         Button(action: handleOnSignIn) {
-            Text("SIGN IN")
+            Text("SIGN IN").foregroundColor(Color("pictonBlue"))
         }
         .frame(width: 303.0, height: 52.0)
         .background(Color.white)
         .cornerRadius(27)
+        .overlay(
+                    RoundedRectangle(cornerRadius: 27)
+                        .stroke(Color("pictonBlue"), lineWidth: 2)
+                )
+        
     }
 }
 
