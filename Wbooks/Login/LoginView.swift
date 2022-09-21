@@ -8,16 +8,13 @@
 import SwiftUI
 
 struct LoginView: View {
-    struct User{
-         var username: String = ""
-         var password: String = ""
-    }
+  
     @State private var user: User = .init()
     
     var body: some View {
         ZStack {
             imagenBackGround
-            VStack(alignment: .center) {
+            VStack() {
                 imagenLogo
                 usernameTxtVw
                 passwordTxtVw
@@ -56,8 +53,8 @@ private extension LoginView {
             .font(Font.custom("inter", size: 15))
             .fontWeight(.medium)
             .lineSpacing(18)
-            .padding( 17.0)
-            .frame(width: 303.0, height: 52.0)
+            .padding( .horizontal,17)
+            .frame(maxWidth: .infinity, maxHeight: 52)
             .background(Color.white)
             .textContentType(.username)
             .border(Color.black, width: 0.1)
@@ -69,8 +66,8 @@ private extension LoginView {
             .font(Font.custom("inter", size: 15))
             .fontWeight(.medium)
             .lineSpacing(18)
-            .padding( 17.0)
-            .frame(width: 303.0, height: 52.0)
+            .padding( .horizontal,17)
+            .frame(maxWidth: .infinity, maxHeight: 52)
             .background(Color.white)
             .textContentType(.password)
             .border(Color.black, width: 0.1)
@@ -78,14 +75,14 @@ private extension LoginView {
     }
     var signInBtVW: some View{
         Button(action: handleOnSignIn) {
-            Text("SIGN IN").foregroundColor(Color("pictonBlue"))
+            Text("SIGN IN").foregroundColor(Color("PictonBlue"))
         }
-        .frame(width: 303.0, height: 52.0)
+        .frame(maxWidth: .infinity, maxHeight: 52)
         .background(Color.white)
         .cornerRadius(27)
         .overlay(
                     RoundedRectangle(cornerRadius: 27)
-                        .stroke(Color("pictonBlue"), lineWidth: 2)
+                        .stroke(Color("PictonBlue"), lineWidth: 2)
                 )
         
     }
