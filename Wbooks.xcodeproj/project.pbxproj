@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E94C903E28DA2AB70001AF51 /* LoginStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94C903D28DA2AB70001AF51 /* LoginStruct.swift */; };
+		E96574FF28DE580F00A9105E /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96574FE28DE580F00A9105E /* LibraryView.swift */; };
 		E9A870F528D3BE8700198F17 /* WbooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A870F428D3BE8700198F17 /* WbooksApp.swift */; };
 		E9A870F728D3BE8700198F17 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A870F628D3BE8700198F17 /* LoginView.swift */; };
 		E9A870F928D3BE8B00198F17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A870F828D3BE8B00198F17 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		E94C903D28DA2AB70001AF51 /* LoginStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStruct.swift; sourceTree = "<group>"; };
+		E96574FE28DE580F00A9105E /* LibraryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LibraryView.swift; path = ../../../../Desktop/LibraryView.swift; sourceTree = "<group>"; };
 		E9A870F128D3BE8700198F17 /* Wbooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wbooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A870F428D3BE8700198F17 /* WbooksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WbooksApp.swift; sourceTree = "<group>"; };
 		E9A870F628D3BE8700198F17 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			children = (
 				E94C903F28DA31E80001AF51 /* Login */,
 				E9A870F428D3BE8700198F17 /* WbooksApp.swift */,
+				E96574FE28DE580F00A9105E /* LibraryView.swift */,
 				E9A870F828D3BE8B00198F17 /* Assets.xcassets */,
 				E9A870FA28D3BE8B00198F17 /* Wbooks.entitlements */,
 				E9A870FB28D3BE8B00198F17 /* Preview Content */,
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E96574FF28DE580F00A9105E /* LibraryView.swift in Sources */,
 				E9A870F728D3BE8700198F17 /* LoginView.swift in Sources */,
 				E94C903E28DA2AB70001AF51 /* LoginStruct.swift in Sources */,
 				E9A870F528D3BE8700198F17 /* WbooksApp.swift in Sources */,
