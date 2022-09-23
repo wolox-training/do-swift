@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E9A870F528D3BE8700198F17 /* WbooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A870F428D3BE8700198F17 /* WbooksApp.swift */; };
-		E9A870F728D3BE8700198F17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A870F628D3BE8700198F17 /* ContentView.swift */; };
+		E9A870F728D3BE8700198F17 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A870F628D3BE8700198F17 /* LibraryView.swift */; };
 		E9A870F928D3BE8B00198F17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A870F828D3BE8B00198F17 /* Assets.xcassets */; };
 		E9A870FD28D3BE8B00198F17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A870FC28D3BE8B00198F17 /* Preview Assets.xcassets */; };
 		E9A8710728D3BE8C00198F17 /* WbooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A8710628D3BE8C00198F17 /* WbooksTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		E9A870F128D3BE8700198F17 /* Wbooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wbooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A870F428D3BE8700198F17 /* WbooksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WbooksApp.swift; sourceTree = "<group>"; };
-		E9A870F628D3BE8700198F17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E9A870F628D3BE8700198F17 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		E9A870F828D3BE8B00198F17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9A870FA28D3BE8B00198F17 /* Wbooks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Wbooks.entitlements; sourceTree = "<group>"; };
 		E9A870FC28D3BE8B00198F17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -72,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E94037D128DE38730011C095 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				E9A870F628D3BE8700198F17 /* LibraryView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		E9A870E828D3BE8700198F17 = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				E9A870F428D3BE8700198F17 /* WbooksApp.swift */,
-				E9A870F628D3BE8700198F17 /* ContentView.swift */,
+				E94037D128DE38730011C095 /* Library */,
 				E9A870F828D3BE8B00198F17 /* Assets.xcassets */,
 				E9A870FA28D3BE8B00198F17 /* Wbooks.entitlements */,
 				E9A870FB28D3BE8B00198F17 /* Preview Content */,
@@ -259,7 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9A870F728D3BE8700198F17 /* ContentView.swift in Sources */,
+				E9A870F728D3BE8700198F17 /* LibraryView.swift in Sources */,
 				E9A870F528D3BE8700198F17 /* WbooksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
