@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct WbooksApp: App {
+    @StateObject var viewRouter = ViewRouter()
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            MainNavigationView().environmentObject(viewRouter)
         }
     }
 }
