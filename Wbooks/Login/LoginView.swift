@@ -8,30 +8,33 @@
 import SwiftUI
 
 struct LoginView: View {
-  
+    
     @State private var user: User = .init()
     
+    @EnvironmentObject var viewRouter: ViewRouter
+    
     var body: some View {
-        ZStack {
-            imagenBackGround
-            VStack() {
-                imagenLogo
-                usernameTxtVw
-                passwordTxtVw
-                signInBtVW
-                Spacer()
+        NavigationView{
+            ZStack {
+                imagenBackGround
+                VStack() {
+                    imagenLogo
+                    usernameTxtVw
+                    passwordTxtVw
+                    signInBtVW
+                    Spacer()
+                }
+                .padding(.horizontal, 36.0)
+                .disableAutocorrection(true)
+                .textInputAutocapitalization(.never)
             }
-            .padding(.horizontal, 36.0)
-            .disableAutocorrection(true)
-            .textInputAutocapitalization(.never)
         }
-        
     }
 }
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView().environmentObject(ViewRouter())
     }
 }
 
@@ -46,7 +49,7 @@ private extension LoginView {
         Image("Logo")
             .padding(.top, 93.0)
             .padding(.bottom, 51.0)
-            
+        
     }
     var usernameTxtVw: some View{
         TextField("Username", text: $user.username)
@@ -59,7 +62,7 @@ private extension LoginView {
             .textContentType(.username)
             .border(Color.black, width: 0.1)
             .padding(.bottom, 20.0)
-            
+        
     }
     var passwordTxtVw: some View{
         SecureField("Password", text: $user.password)
@@ -81,15 +84,15 @@ private extension LoginView {
         .background(Color.white)
         .cornerRadius(27)
         .overlay(
-                    RoundedRectangle(cornerRadius: 27)
-                        .stroke(Color("PictonBlue"), lineWidth: 2)
-                )
+            RoundedRectangle(cornerRadius: 27)
+                .stroke(Color("PictonBlue"), lineWidth: 2)
+        )
         
     }
 }
 
 private extension LoginView {
     func handleOnSignIn (){
-        print ("The user: \(user)")
+        viewRouter.currentScreen = .library
     }
 }
